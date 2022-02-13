@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 550px;
+    background: linear-gradient(#7bc9fd, #e1fdff);
+    color: #585454;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.ocean {
+    background: linear-gradient(#4fb9ff, #000000);
+    padding: 80px;
+}
+
+.global-info-ctnr {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.info-ctnr {
+    display: flex;
+    flex-direction: column;
+    max-width: 37%;
+}
+
+.info-ctnr h2 {
+    text-align: center;
+}
+
+.left {
+    align-self: start;
+}
+
+.right {
+    align-self: end;
+}
+
+.white {
+    color: rgb(214, 214, 214);
+}
+
+.info-ctnr p {
+    text-align: justify;
+}
+
+.submarine {
+    width: 100px;
+    position: fixed;
+    left: 46.5%;
+    bottom: 23%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d3c3b7;
+}
+
+footer div {
+    max-width: 50%;
+}

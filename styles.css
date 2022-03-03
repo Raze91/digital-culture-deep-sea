@@ -29,6 +29,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     gap: 200px;
+    margin-top: 300px;
 }
 
 .info-ctnr {
@@ -41,11 +42,7 @@ header h1 {
     text-align: center;
 }
 
-.left {
-    align-self: start;
-}
-
-.right {
+.info-ctnr:nth-child(even) {
     align-self: end;
 }
 
@@ -68,7 +65,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #d3c3b7;
+    background-color: dimgrey;
 }
 
 footer div {

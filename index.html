@@ -11,6 +11,9 @@
 
 <body>
 <header>
+    <div class="cloud x1"></div>
+    <div class="cloud x2"></div>
+    <div class="cloud x3"></div>
     <h1>Deep Sea Exploration</h1>
     <p>
         About 71% of our planet's surface is covered in water, with the most of it still being a mystery. <br/>
@@ -21,6 +24,69 @@
     </p>
 </header>
 <main class="ocean">
+    <div class="waves">
+        <svg width="100%" height="200px" fill="none">
+            <path
+                    fill="#4fb9ff"
+                    d="
+          M0 67
+          C 273,183
+            822,-40
+            1920.00,106
+
+          V 359
+          H 0
+          V 67
+          Z">
+                <animate
+                        repeatCount="indefinite"
+                        attributeName="d"
+                        dur="15s"
+                        values="
+            M0 77
+            C 473,283
+              822,-40
+              1920,116
+
+            V 359
+            H 0
+            V 67
+            Z;
+
+            M0 77
+            C 473,-40
+              1222,283
+              1920,136
+
+            V 359
+            H 0
+            V 67
+            Z;
+
+            M0 77
+            C 973,260
+              1722,-53
+              1920,120
+
+            V 359
+            H 0
+            V 67
+            Z;
+
+            M0 77
+            C 473,283
+              822,-40
+              1920,116
+
+            V 359
+            H 0
+            V 67
+            Z
+            ">
+                </animate>
+            </path>
+        </svg>
+    </div>
     <svg viewBox="0 0 496 496" class="submarine">
         <path style="fill:#89867c"
               d="M252 275.156c-12 0-22.4-10.4-22.4-22.4v-129.6c0-12 10.4-22.4 22.4-22.4h49.6v27.2H256v124.8c0-2.4-2.4-4.8-4.8-4.8v27.2h.8z"/>
@@ -80,14 +146,6 @@
     <div class="global-info-ctnr">
 
         <div class="info-ctnr">
-            <h2>1521</h2>
-            <p>
-                The first milestone happened in 1521 as the portuguese explorer Ferdinand Magellan tried to
-                mesure the depth of the Pacific Ocean with a weighted line, but did not find the bottom.
-            </p>
-        </div>
-
-        <div class="info-ctnr">
             <h2>1818</h2>
             <p>
                 The british researcher Sir John Ross was the first to find that the deep sea is inhabited
@@ -96,6 +154,9 @@
         </div>
 
         <div class="info-ctnr">
+            <img src="assets/ocean-exploration-edward-forbes-se41.jpeg"
+                 alt="edward forbes"
+            >
             <h2>1843</h2>
             <p>
                 Edward Forbes claimed that diversity of life in the deep sea is little and decreases with
@@ -121,6 +182,10 @@
         </div>
 
         <div class="info-ctnr white">
+            <img
+                    src="assets/challenger.jpeg"
+                    alt="challenger"
+            />
             <h2>1872 – 1876</h2>
             <p>
                 The first systematic deep sea exploration was conducted by the Challenger expedition on board the
@@ -156,6 +221,10 @@
         </div>
 
         <div class="info-ctnr white">
+            <img
+                    src="assets/ocean-exploration-beebe-barton-bathysphere-se41.jpeg"
+                    alt="batysphere"
+            >
             <h2>1934</h2>
             <p>
                 William Beebe and his partner Otis Barton were lowered 923m under the ocean's surface. This
@@ -164,6 +233,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-coelacanth-se42.jpeg" alt="coelacanth">
             <h2>1938</h2>
             <p>
                 Fishermen off the coast of South Africa pull up a five-foot fish later identified as a coelacanth.
@@ -175,6 +245,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-aqua-lung-se41.jpeg" alt="aqua lung">
             <h2>1943</h2>
             <p>
                 Underwater explorers Jacques Cousteau and Emile Gagnan develop the first modern scuba system. They
@@ -191,7 +262,7 @@
             <p>
                 Swiss physicist Auguste Piccard dives in his newly designed vehicle called a bathyscaphe.
                 <br> <br>
-                Known as FRNS-2, it is the first untethered craft to carry people into the deep waters of the ocean.
+                Known as FNRS-2, it is the first untethered craft to carry people into the deep waters of the ocean.
                 It sets several world diving records, beating those of the bathyspheres, since no unwieldy cable is
                 required for diving.
                 <br> <br>
@@ -201,34 +272,50 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-hms-challenger-se41.jpeg" alt="hms challenger">
             <h2>1951</h2>
             <p>
-                The Electronic Position Indicator (EPI) navigation system is developed during this period by the Coast
-                and Geodetic Survey to give accuracies of approximately 100 feet at distances out to 200 miles from
-                shore-based stations.
+                The British ship HMS Challenger bounces sound waves off the ocean bottom and locates what appears to be
+                the sea's deepest point. With a depth of 35,856 feet (10,929 meters), it is named the Challenger Deep.
+                <br> <br>
+                Located off the coast of the Marianas Islands in the Pacific Ocean, the site is known today as the
+                Mariana Trench.
+                <br> <br>
+                This trench is so deep that if you could put Mount Everest on the ocean floor, its
+                summit would lie about a mile below the ocean surface.
             </p>
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-mid-arlantuc-ridge-se41.jpeg" alt="mid arlantuc ridge"/>
             <h2>1953</h2>
             <p>
-                Marie Tharpe notices a rift valley in sounding profiles along the Mid-Atlantic Ridge. Later, Bruce
-                Heezen and Maurice Ewing interpret this to indicate a continuous rift valley extending over 40,000
-                nautical miles along all the oceanic ridge segments of the world.
+                American geologist Marie Tharp studies sounding profiles from the Atlantic Ocean and discovers a rift
+                valley. Later studies reveal it to be a continuous rift extending over 40,000 nautical miles (64,373
+                kilometers) along the ocean floor.
+                <br> <br>
+                This discovery provides evidence for the newly formed theory of
+                continental drift, known today as plate tectonics.
             </p>
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-fnrs-3-se42.jpeg" alt="fnrs 3">
             <h2>1954</h2>
             <p>
-                On February 15, the French research submersible FNRS-3 dives to 13,287 feet off the coast of Dakar,
-                Africa, piloted by Georges Houot and Pierre Willm.
+                The French submersible FNRS-3 sets a new record for an untethered deep sea dive as she descends to a
+                depth of 13,290 feet (4,050 meters).
                 <br> <br>
-                This ushers in the era of manned untethered research submersibles.
+                The historic dive takes place in the Atlantic Ocean off the coast
+                of Senegal in West Africa.
+                <br> <br>
+                The FNRS-3 submersible is currently on display in Toulon, a city on the
+                French Riviera and a large port on the Mediterranean coast.
             </p>
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-survey-ship-pioneer-se41.jpeg" alt="survey ship pioneer">
             <h2>1955</h2>
             <p>
                 The Coast and Geodetic Survey Ship Pioneer, in a joint project with the U.S. Navy and the Scripps
@@ -241,11 +328,16 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-bathyscaphe-trieste-se55.jpeg" alt="bathyscaphe trieste">
             <h2>1960</h2>
             <p>
-                Jacques Piccard and Don Walsh reached the bottom of the Challenger Deep in the Mariana Trench,
-                descending to a depth of 10 740m in their deep sea vessel Trieste, where they observed
-                fish and other deep sea organisms.
+                Jacques Piccard, son of explorer August Piccard, and two other men descend into the ocean to a depth of
+                35,797 feet (10,911 meters), nearly seven miles.
+                <br> <br>
+                They make the trip in the Trieste, a sturdy underwater vehicle known as a bathyscaphe.
+                Trieste was designed by Piccard and built several years earlier.
+                <br> <br>
+                The divers discover fish and other amazing deep-sea life at these tremendous depths.
             </p>
         </div>
 
@@ -258,6 +350,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-multibeam-sounding-se42.jpeg" alt="multibeam sounding"/>
             <h2>1963</h2>
             <p>
                 The first operational multibeam sounding system is installed on the U.S. Naval Ship Compass Island.
@@ -269,17 +362,53 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-submersible-alvin-se43.jpeg" alt="submersible alvin">
             <h2>1964</h2>
             <p>
-                The now-famous Alvin human occupied vehicle is launched and begins its career of unparalleled oceanic
-                research and exploration.
+                Alvin, a new deep submergence vehicle, is constructed by the Woods Hole Oceanographic Institute.
+                <br> <br>
+                It is the first U.S. deep diving submersible and the first deep-sea submersible capable of carrying
+                passengers.
+                <br> <br>
+                Later that year, Alvin explores the Cayman Trough, the deepest point in the Caribbean Sea.
+                Alvin becomes one of the most famous deep sea vehicles, making over 4,000 dives during its lifetime.
+            </p>
+
+            <img src="assets/ocean-exploration-sealab-1-se41.jpeg" alt="sealab 1">
+            <p>
+                The same year was born Sealab 1, the first experimental underwater habitat developed by the Navy to
+                research the psychological and physiological strain of extended periods spent living and working
+                underwater.
+                <br> <br>
+                It is deployed off the coast of Bermuda at a depth of 192 feet (59 meters) below the ocean surface.
+                <br> <br>
+                Sealab 1 proves that saturation diving in the open ocean is viable for extended periods.
+                <br> <br>
+                It is currently
+                on display at the Museum of Man in the Sea, in Panama City Beach, Florida
             </p>
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-curv-1-se54.jpeg" alt="curv 1">
             <h2>1965</h2>
             <p>
-                The Surveyor uses a sidecan sonar system to explore an offshore extension of the San Andreas Fault.
+                The Navy develops the Cable-controlled Underwater Recovery Vehicle (CURV).
+                <br> <br>
+                It's developed by the former Pasadena Annex of the Naval Ordnance Test Station to recover test ordnance
+                lost off San Clemente Island at depths as great as 2,000 feet (610 meters).
+                <br> <br>
+                It is designed to find and retrieve torpedoes it used in tests and training but becomes famous in 1966
+                when it recovers an H-bomb off Spain in 2,800 feet (853 meters) of water.
+            </p>
+            <img src="assets/ocean-exploration-sealab-2-se41.jpeg" alt="sealab 2">
+            <p>
+                Sealab 2 is deployed in the La Jolla Canyon off the coast of Scripps Institution of Oceanography in La
+                Jolla, California, at a depth of 205 feet (62 meters).
+                <br> <br>
+                It is twice the size of Sealab 1 and is designed to house ten men at a depth of 200 feet (61 meters)
+                for 30 days and contains heating coils in the deck to ward off the constant helium-induced chill,
+                and air conditioning to reduce humidity.
             </p>
         </div>
 
@@ -291,13 +420,21 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-noaa-logo-se55.png" alt="noaa logo">
             <h2>1970</h2>
             <p>
-                On October 3, 1970, this new agency, NOAA, came into being and ushers in a new era of ocean exploration.
+                The National Oceanic and Atmospheric Administration (NOAA) is established.
+                <br> <br>
+                It is an American scientific agency within the United States Department of Commerce that focuses on the
+                conditions of the oceans, major waterways, and the atmosphere.
+                <br> <br>
+                NOAA warns of dangerous weather, charts seas, guides the use and protection of ocean and coastal
+                resources and conducts research to provide the understanding and improve stewardship of the environment.
             </p>
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-hydrothermal-vent-se41.jpeg" alt="hydrothermal vent">
             <h2>1977</h2>
             <p>
                 Scientists aboard the deep sea submersible, Alvin, discover and document incredible deep sea
@@ -315,6 +452,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-jim-suit-se41.jpeg" alt="jim suit">
             <h2>1979</h2>
             <p>
                 Doctor Sylvia Earle sets a new record for a deep dive in a dive suit. Using a new pressurized metal suit
@@ -326,6 +464,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-titanic-se41.jpeg" alt="titanic">
             <h2>1985</h2>
             <p>
                 Dr. Robert Ballard, with the help of a tiny robotic submarine named Jason, discovers the wreck of the
@@ -338,6 +477,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-argo-logo-se54.png" alt="argo logo">
             <h2>1990</h2>
             <p>
                 A program known as Argo begins to deploy 3,000 robotic probes throughout the world's oceans to monitor
@@ -349,6 +489,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-topex-poseidon-se41.jpeg" alt="topex poseidon">
             <h2>1992</h2>
             <p>
                 The TOPEX / Poseidon satellite is launched, providing oceanographic data that was previously impossible
@@ -365,6 +506,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-aquarius-undersea-lab-se41.jpeg" alt="aquarius undersea lab">
             <h2>1993</h2>
             <p>
                 An undersea habitat known as Aquarius begins operation in the U.S. Virgin Islands.
@@ -381,6 +523,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-seafloor-map-se41.jpeg" alt="seafloor map">
             <h2>1995</h2>
             <p>
                 Declassification of Geosat satellite radar altimetry data leads to worldwide mapping of the sea floor
@@ -397,6 +540,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-autosub-se42.jpeg" alt="autosub">
             <h2>2000</h2>
             <p>
                 The Southampton Oceanography Centre (SOC) develops and launches an automated robotic vehicle to study
@@ -411,6 +555,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-mariana-trench-map-se42.jpeg" alt="mariana trench map">
             <h2>2009</h2>
             <p>
                 President George W. Bush established the Mariana Trench National Monument. The monument contains no dry
@@ -422,6 +567,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-school-of-fish-se32.jpeg" alt="school of fish">
             <h2>2010</h2>
             <p>
                 The first ever global census of marine life is completed. This 10 year project involves 2,700 scientists
@@ -433,6 +579,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-james-cameron-se42.jpeg" alt="james cameron">
             <h2>2012</h2>
             <p>
                 The DEEPSEA Challenge sees James Cameron travel to the deepest known point in the ocean at the
@@ -444,6 +591,7 @@
         </div>
 
         <div class="info-ctnr white">
+            <img src="assets/ocean-exploration-echo-sounding-map-sk42.jpeg" alt="echo sounding map">
             <h2>2017</h2>
             <p>
                 An effort known as Seabed 2030 is announced, detailing the use of tracking ships outfitted with
@@ -455,6 +603,11 @@
         </div>
 
         <div class="info-ctnr white">
+            <img
+                    class="max"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Limiting_Factor_at_the_Cumberland_East_Bay_%28South_Georgia_Island%29.jpg/1200px-Limiting_Factor_at_the_Cumberland_East_Bay_%28South_Georgia_Island%29.jpg"
+                    alt="Limiting Factor at the Cumberland East Bay (South Georgia Island).jpg"
+            >
             <h2>2018</h2>
             <p>
                 DSV Limiting Factor, piloted by Victor Vescovo, completed the first mission to the deepest point of
@@ -473,20 +626,18 @@
     </div>
 </main>
 <footer>
-    <div>
-        <p>Sources :</p>
-        <ul>
-            <li>
-                <a href="https://oceanexplorer.noaa.gov/welcome.html" target="_blank">NOAA - Ocean Exploration</a>
-            </li>
-            <li>
-                <a href="https://en.wikipedia.org/wiki/Deep-sea_exploration" target="_blank">Wikipedia</a>
-            </li>
-            <li>
-                <a href="http://www.seasky.org/sea.html" target="_blank">Seasky.org</a>
-            </li>
-        </ul>
-    </div>
+    <p>Sources :</p>
+    <ul>
+        <li>
+            <a href="https://oceanexplorer.noaa.gov/welcome.html" target="_blank">NOAA - Ocean Exploration</a>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Deep-sea_exploration" target="_blank">Wikipedia</a>
+        </li>
+        <li>
+            <a href="http://www.seasky.org/sea.html" target="_blank">Seasky.org</a>
+        </li>
+    </ul>
 </footer>
 <script type="text/javascript" src="index.js"></script>
 </body>

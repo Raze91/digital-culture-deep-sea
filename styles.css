@@ -14,6 +14,7 @@ header {
     height: 550px;
     background: linear-gradient(#7bc9fd, #e1fdff);
     color: #585454;
+    position: relative;
 }
 
 header h1 {
@@ -21,8 +22,17 @@ header h1 {
 }
 
 .ocean {
-    background: linear-gradient(#4fb9ff, #000000);
+    background: linear-gradient(#4fb9ff, #000000, #000000);
+    margin-top: 50px;
     padding: 80px;
+    position: relative;
+}
+
+.ocean .waves {
+    width: 100%;
+    position: absolute;
+    top: -200px;
+    left: 0;
 }
 
 .global-info-ctnr {
@@ -36,6 +46,22 @@ header h1 {
     display: flex;
     flex-direction: column;
     max-width: 37%;
+}
+
+.info-ctnr img {
+    width: fit-content;
+}
+
+.info-ctnr img:nth-of-type(1) {
+    margin: 0 auto;
+}
+
+.info-ctnr img:nth-of-type(2) {
+    margin: 10px auto;
+}
+
+.info-ctnr .max {
+    max-width: 100%;
 }
 
 .info-ctnr h2 {
@@ -63,11 +89,180 @@ header h1 {
 
 footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    padding: 10px 100px;
     background-color: dimgrey;
 }
 
-footer div {
-    max-width: 50%;
+footer ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer ul li a:hover {
+    color: aliceblue;
+}
+
+/******************/
+/***** NUAGES *****/
+/******************/
+
+.cloud {
+    width: 200px;
+    height: 60px;
+    background: #fff;
+
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+
+    position: absolute;
+}
+
+.cloud:before, .cloud:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 100px;
+    height: 80px;
+    top: -15px;
+    left: 10px;
+
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+    width: 120px;
+    height: 120px;
+    top: -55px;
+    left: auto;
+    right: 15px;
+}
+
+
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -700px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+        margin-left: -700px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -700px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-webkit-keyframes animateCloud2 {
+    0% {
+        margin-left: -200px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud2 {
+    0% {
+        margin-left: -200px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud2 {
+    0% {
+        margin-left: -200px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-webkit-keyframes animateCloud3 {
+    0% {
+        margin-left: -1200px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud3 {
+    0% {
+        margin-left: -1200px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud3 {
+    0% {
+        margin-left: -1200px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+.x1 {
+    -webkit-animation: animateCloud 60s linear infinite;
+    -moz-animation: animateCloud 60s linear infinite;
+    animation: animateCloud 60s linear infinite;
+    top: 50px;
+
+    -webkit-transform: scale(0.60);
+    -moz-transform: scale(0.60);
+    transform: scale(0.60);
+}
+
+.x2 {
+    -webkit-animation: animateCloud2 50s linear infinite;
+    -moz-animation: animateCloud2 50s linear infinite;
+    animation: animateCloud2 50s linear infinite;
+    top: 100px;
+
+    -webkit-transform: scale(0.60);
+    -moz-transform: scale(0.60);
+    transform: scale(0.60);
+}
+
+.x3 {
+    -webkit-animation: animateCloud3 65s linear infinite;
+    -moz-animation: animateCloud3 65s linear infinite;
+    animation: animateCloud3 65s linear infinite;
+    top: 140px;
+
+    -webkit-transform: scale(0.60);
+    -moz-transform: scale(0.60);
+    transform: scale(0.60);
 }

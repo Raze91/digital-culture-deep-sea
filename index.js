@@ -2,7 +2,7 @@ const options = {
     // section qui contient l'élément
     root: document.querySelector('#scrollArea'),
     // hitbox de detection de l'élément
-    rootMargin: '0px',
+    rootMargin: '-171px',
     // visibilité de l'élément
     threshold: 1.0
 };
@@ -17,18 +17,24 @@ const endOptions = {
 }
 
 const observer = new IntersectionObserver((entries) => {
-    console.log(entries)
     if (entries[0].isIntersecting) {
         document.querySelector(".submarine").classList.replace("submarine", "fixed-submarine");
     }
 }, options);
 
+
 const endObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-        console.log("end");
         document.querySelector(".fixed-submarine").classList.replace("fixed-submarine", "bottom-submarine");
     }
 }, endOptions)
 
 observer.observe(document.querySelector('.submarine'))
 endObserver.observe(document.querySelector(".conclusion"))
+
+
+document.addEventListener("scroll", () => {
+    if (window.scrollY <= 1450 && document.querySelector(".fixed-submarine")) {
+        document.querySelector(".fixed-submarine").classList.replace("fixed-submarine", "submarine")
+    }
+})

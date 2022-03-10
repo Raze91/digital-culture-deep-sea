@@ -3,7 +3,7 @@ body {
 }
 
 html {
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -11,14 +11,30 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 550px;
-    background: linear-gradient(#7bc9fd, #e1fdff);
-    color: #585454;
+    height: 720px;
+    background: linear-gradient(#0466C8, #bde0fe);
     position: relative;
+    color: white;
 }
 
 header h1 {
+    font-family: "Prompt", sans-serif;
     margin: 0;
+    line-height: 0.6;
+    font-size: 96px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+
+.header-frame {
+    margin: 0 auto;
+    width: 50vw;
+}
+
+.header-frame h6 {
+    font-size: 24px;
+    margin: 24px 0;
 }
 
 .center {
@@ -31,7 +47,7 @@ header h1 {
 }
 
 .ocean {
-    background: linear-gradient(#4fb9ff, #000000, #000000);
+    background: linear-gradient(#023E7D, #001845, #000307);
     margin-top: 50px;
     padding: 300px 80px 80px 80px;
     position: relative;
@@ -79,8 +95,11 @@ header h1 {
     max-width: 100%;
 }
 
-.info-ctnr h2 {
+.info-ctnr h3 {
     text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
 }
 
 .info-ctnr:nth-child(even) {

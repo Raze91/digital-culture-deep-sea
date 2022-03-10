@@ -3,7 +3,7 @@ body {
 }
 
 html {
-    font-family: sans-serif;
+    font-family: "Comic Sans MS", sans-serif;
 }
 
 header {
@@ -21,11 +21,26 @@ header h1 {
     margin: 0;
 }
 
+.center {
+    text-align: justify;
+}
+
+.center-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 .ocean {
     background: linear-gradient(#4fb9ff, #000000, #000000);
     margin-top: 50px;
-    padding: 80px;
+    padding: 300px 80px 80px 80px;
     position: relative;
+    color: ghostwhite;
+}
+
+.ocean p {
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .ocean .waves {
@@ -72,19 +87,31 @@ header h1 {
     align-self: end;
 }
 
-.white {
-    color: rgb(214, 214, 214);
-}
-
 .info-ctnr p {
     text-align: justify;
 }
 
 .submarine {
     width: 100px;
+    position: absolute;
+    left: 46.5%;
+    top: 3.5%;
+}
+
+.fixed-submarine {
+    width: 100px;
     position: fixed;
     left: 46.5%;
     bottom: 23%;
+}
+
+.conclusion {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.conclusion img {
+    margin-top: 40px;
 }
 
 footer {

@@ -105,6 +105,13 @@ header h1 {
     bottom: 23%;
 }
 
+.bottom-submarine {
+    width: 100px;
+    position: absolute;
+    left: 46.5%;
+    bottom: 2.5%;
+}
+
 .conclusion {
     margin-top: 100px;
     text-align: center;
